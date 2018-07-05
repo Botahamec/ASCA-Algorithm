@@ -2,12 +2,12 @@ import sys
 import math
 
 #asks for voters per region
-nevotes = input ("How many registered voters are in the Northeast?")
-sevotes = input ("How many registered voters are in the Southeast?")
-mwvotes = input ("How many registered voters are in the Midwest?")
-swvotes = input ("How many registered voters in the Southeast?")
-westvotes = input ("How many registered voters are in the West?")
-osvotes = input ("How many registered voters are Overseas?")
+nevotes = input ("How many voters are in the Northeast?")
+sevotes = input ("How many voters are in the Southeast?")
+mwvotes = input ("How many voters are in the Midwest?")
+swvotes = input ("How many voters in the Southeast?")
+westvotes = input ("How many voters are in the West?")
+osvotes = input ("How many voters are Overseas?")
 voters = nevotes + sevotes + mwvotes + swvotes + westvotes + osvotes #finds the total number of voters
 
 #calculates the highest number of voters for a region
