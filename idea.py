@@ -60,24 +60,17 @@ while (True):
 				swseats = swvotes / interval
 				westseats = westvotes / interval
 				osseats = osvotes / interval
-				neseats = neseats - abs(.5-(nevotes%interval/interval))
-                seseats = seseats - abs(.5-(sevotes%interval/interval))
-                mwseats = mwseats - abs(.5-(mwvotes%interval/interval))
-                swseats = swseats - abs(.5-(swvotes%interval/interval))
-                westseats=westseats-abs(.5-(westvotes%interval/interval))
-                osseats = osseats - abs(.5-(osvotes%interval/interval))
-
 		
 		interval += delta #increases the interval and starts the loop again
 
 	#prints the number of seats required
 	print("_____________________________________________________________")
-	print ("Northeast: " + str(neseats))
-	print ("Southeast: " + str(seseats))
-	print ("Midwest:   " + str(mwseats))
-	print ("Southwest: " + str(swseats))
-	print ("West:      " + str(westseats))
-	print ("Overseas:  " + str(osseats))
+	print ("Northeast: " + str(int(round(neseats))))
+	print ("Southeast: " + str(int(round(seseats))))
+	print ("Midwest:   " + str(int(round(mwseats))))
+	print ("Southwest: " + str(int(round(swseats))))
+	print ("West:      " + str(int(round(westseats))))
+	print ("Overseas:  " + str(int(round(osseats))))
 
 	print ("") #enters a blank line
 	print ("Seat Ratio: 1 Representative per " + str(ratio) + " Voters")
