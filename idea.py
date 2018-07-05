@@ -50,7 +50,7 @@ while (True):
 			oserr = abs(.5 - (osvotes % interval / interval))
 			err = neerr + seerr + mwerr + swerr + westerr + oserr
 			
-			#if the error is low, then the number of seats per region is recorded
+			#if error is low, then the number of seats per region is recorded
 			if (err >= lowerror) :
 				lowerror = err #sets the lowest error
 				ratio = interval #records the seat to voter ratio
