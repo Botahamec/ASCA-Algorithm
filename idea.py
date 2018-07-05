@@ -10,15 +10,6 @@ westvotes = input ("How many registered voters are in the West?")
 osvotes = input ("How many registered voters are Overseas?")
 voters = nevotes + sevotes + mwvotes + swvotes + westvotes + osvotes #finds the total number of voters
 
-#number of voters per region (will be removed)
-voters = 144
-nevotes = 36
-sevotes = 22
-mwvotes = 26
-swvotes = 11
-westvotes = 19
-osvotes = 29
-
 #calculates the highest number of voters for a region
 highvotes = nevotes #i assume automatically the northeast will, to save time
 if (highvotes < osvotes) : highvotes = osvotes
