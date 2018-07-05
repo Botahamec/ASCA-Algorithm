@@ -18,8 +18,8 @@ if (highvotes < sevotes) : highvotes = sevotes
 if (highvotes < westvotes) : highvotes = westvotes
 if (highvotes < swvotes) : highvotes = swvotes
 
-delta = (1 / highvotes)
-total = (voters / 2) #times the loop will run, impossible to have less than one seat
+delta = 1 / highvotes
+total = voters / 2 #times the loop will run, impossible to have less than one seat
 total += 1 #number of times the loop will run + 1
 invalid = [1] #one will not be used as a seat to voter ratio
 
