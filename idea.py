@@ -61,7 +61,7 @@ while (True):
 				westseats = westvotes / interval
 				osseats = osvotes / interval
 		
-		interval += delta #increases the interval number and starts the loop again
+		interval += delta #increases the interval and starts the loop again
 
 	#prints the number of seats required, they will probably need to be rounded
 	print("_____________________________________________________________")
