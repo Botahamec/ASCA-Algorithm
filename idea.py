@@ -46,7 +46,7 @@ while (True):
 			seerr = abs(.5 - (sevotes % interval / interval))
 			mwerr = abs(.5 - (mwvotes % interval / interval))
 			swerr = abs(.5 - (swvotes % interval / interval))
-			westerr = abs(.5 - (swvotes % interval / interval))
+			westerr = abs(.5 - (westvotes % interval / interval))
 			oserr = abs(.5 - (osvotes % interval / interval))
 			err = neerr + seerr + mwerr + swerr + westerr + oserr
 
