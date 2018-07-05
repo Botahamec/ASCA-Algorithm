@@ -49,14 +49,6 @@ while (True):
 			westerr = abs(.5 - (westvotes % interval / interval))
 			oserr = abs(.5 - (osvotes % interval / interval))
 			err = neerr + seerr + mwerr + swerr + westerr + oserr
-
-			#calculates seats per region
-			netest = nevotes / interval + 1
-			setest = sevotes / interval + 1
-			mwtest = mwvotes / interval + 1
-			swtest = swvotes / interval + 1
-			westtest = westvotes / interval + 1
-			ostest = osvotes / interval + 1
 			
 			#if the error is low, then the number of seats per region is recorded
 			if (err >= lowerror) :
