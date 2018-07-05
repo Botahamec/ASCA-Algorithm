@@ -60,6 +60,13 @@ while (True):
 				swseats = swvotes / interval
 				westseats = westvotes / interval
 				osseats = osvotes / interval
+				neseats = neseats - abs(.5-(nevotes%interval/interval))
+                seseats = seseats - abs(.5-(sevotes%interval/interval))
+                mwseats = mwseats - abs(.5-(mwvotes%interval/interval))
+                swseats = swseats - abs(.5-(swvotes%interval/interval))
+                westseats=westseats-abs(.5-(westvotes%interval/interval))
+                osseats = osseats - abs(.5-(osvotes%interval/interval))
+
 		
 		interval += delta #increases the interval and starts the loop again
 
