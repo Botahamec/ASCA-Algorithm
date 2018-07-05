@@ -70,7 +70,7 @@ while (True):
 		
 		interval += delta #increases the interval and starts the loop again
 
-	#prints the number of seats required, they will probably need to be rounded
+	#prints the number of seats required
 	print("_____________________________________________________________")
 	print ("Northeast: " + str(neseats))
 	print ("Southeast: " + str(seseats))
