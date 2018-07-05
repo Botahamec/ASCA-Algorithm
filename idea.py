@@ -2,12 +2,12 @@ import sys
 import math
 
 #asks for voters per region
-nevotes = input ("How many registered voters are in the Northeast?")
-sevotes = input ("How many registered voters are in the Southeast?")
-mwvotes = input ("How many registered voters are in the Midwest?")
-swvotes = input ("How many registered voters in the Southeast?")
-westvotes = input ("How many registered voters are in the West?")
-osvotes = input ("How many registered voters are Overseas?")
+nevotes = int(input("How many registered voters are in the Northeast?"))
+sevotes = int(input("How many registered voters are in the Southeast?"))
+mwvotes = int(input("How many registered voters are in the Midwest?"))
+swvotes = int(input("How many registered voters in the Southwest?"))
+westvotes = int(input("How many registered voters are in the West?"))
+osvotes = int(input("How many registered voters are Overseas?"))
 voters = nevotes + sevotes + mwvotes + swvotes + westvotes + osvotes #total voters
 
 #calculates the highest number of voters for a region
@@ -18,8 +18,8 @@ if (highvotes < sevotes) : highvotes = sevotes
 if (highvotes < westvotes) : highvotes = westvotes
 if (highvotes < swvotes) : highvotes = swvotes
 
-delta = 1 / highvotes
-total = voters / 2 #times the loop will run, impossible to have less than one seat
+delta = (1 / highvotes)
+total = (voters / 2) #times the loop will run, impossible to have less than one seat
 total += 1 #number of times the loop will run + 1
 invalid = [1] #one will not be used as a seat to voter ratio
 
