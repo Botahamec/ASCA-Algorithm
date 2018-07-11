@@ -10,6 +10,14 @@ westvotes = int(input("How many registered voters are in the West?"))
 osvotes = int(input("How many registered voters are Overseas?"))
 voters = nevotes + sevotes + mwvotes + swvotes + westvotes + osvotes #total voters
 
+#asks for number of candidates
+necands = int(input("How many candidates are in the Northeast?"))
+secands = int(input("How many candidates are in the Southeast?"))
+mwcands = int(input("How many candidates are in the Midwest?"))
+swcands = int(input("How many candidates are in the Southwest?"))
+westcands = int(input("How many candidates are in the West?"))
+oscands = int(input("How many candidates are Overseas?"))
+
 #calculates the highest number of voters for a region
 highvotes = nevotes #i assume automatically the northeast will, to save time
 if (highvotes < osvotes) : highvotes = osvotes
@@ -44,6 +52,7 @@ while (True):
 		netest = nevotes / interval
 		setest = sevotes / interval
 		mwtest = mwvotes / interval
+		swtest = swvotes / interval
 		westtest = westvotes / interval
 		ostest = osvotes / interval
 
@@ -94,12 +103,12 @@ while (True):
 
 	#prints the number of seats required
 	print("_____________________________________________________________")
-	print ("Northeast: " + strneseats))
-	print ("Southeast: " + strseseats))
-	print ("Midwest:   " + strmwseats))
-	print ("Southwest: " + strswseats))
-	print ("West:      " + strwestseats))
-	print ("Overseas:  " + strosseats))
+	print ("Northeast: " + str(neseats))
+	print ("Southeast: " + str(seseats))
+	print ("Midwest:   " + str(mwseats))
+	print ("Southwest: " + str(swseats))
+	print ("West:      " + str(westseats))
+	print ("Overseas:  " + str(osseats))
 
 	print ("") #enters a blank line
 	print ("Seat Ratio: 1 Representative per " + str(ratio) + " Voters")
