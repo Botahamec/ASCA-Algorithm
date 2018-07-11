@@ -60,6 +60,13 @@ while (True):
 		if (mwtest == 0) : valid = False
 		if (setest == 0) : valid = False
 		if (netest == 0) : valid = False
+
+		if (ostest > oscands) : valid = False
+		if (westtest > westcands) : valid = False
+		if (swtest > swcands) : valid = False
+		if (mwtest > mwcands) : valid = False
+		if (setest > secands) : valid = False
+		if (netest > necands) : valid = False
 		
 		if (valid):
 			
