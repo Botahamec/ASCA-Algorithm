@@ -60,8 +60,6 @@ while (True):
 		if (mwtest == 0) : valid = False
 		if (setest == 0) : valid = False
 		if (netest == 0) : valid = False
-
-		if 
 		
 		if (valid):
 			
