@@ -38,8 +38,32 @@ while (True):
 	
 	#starting the algorithm
 	while (interval < total) :
+
+		valid = True
+
+		netest = nevotes / interval
+		setest = sevotes / interval
+		mwtest = mwvotes / interval
+		westtest = westvotes / interval
+		ostest = osvotes / interval
+
+		netest = round(int(netest))
+		setest = round(int(setest))
+		mwtest = round(int(mwtest))
+		swtest = round(int(swtest))
+		westtest = round(int(westtest))
+		ostest = round(int(ostest))
+
+		if (ostest == 0) : valid = False
+		if (westtest == 0) : valid = False
+		if (swtest == 0) : valid = False
+		if (mwtest == 0) : valid = False
+		if (setest == 0) : valid = False
+		if (netest == 0) : valid = False
+
+		if 
 		
-		if (not(interval in invalid)):
+		if (valid):
 			
 			#calculates the error for each interval
 			neerr = abs(.5 - (nevotes % interval / interval))
@@ -54,23 +78,23 @@ while (True):
 			if (err >= lowerror) :
 				lowerror = err #sets the lowest error
 				ratio = interval #records the seat to voter ratio
-				neseats = nevotes / interval
-				seseats = sevotes / interval
-				mwseats = mwvotes / interval
-				swseats = swvotes / interval
-				westseats = westvotes / interval
-				osseats = osvotes / interval
+				neseats = netest
+				seseats = setest
+				mwseats = mwtest
+				swseats = swtest
+				westseats = westtest
+				osseats = ostest
 		
 		interval += delta #increases the interval and starts the loop again
 
 	#prints the number of seats required
 	print("_____________________________________________________________")
-	print ("Northeast: " + str(int(round(neseats))))
-	print ("Southeast: " + str(int(round(seseats))))
-	print ("Midwest:   " + str(int(round(mwseats))))
-	print ("Southwest: " + str(int(round(swseats))))
-	print ("West:      " + str(int(round(westseats))))
-	print ("Overseas:  " + str(int(round(osseats))))
+	print ("Northeast: " + strneseats))
+	print ("Southeast: " + strseseats))
+	print ("Midwest:   " + strmwseats))
+	print ("Southwest: " + strswseats))
+	print ("West:      " + strwestseats))
+	print ("Overseas:  " + strosseats))
 
 	print ("") #enters a blank line
 	print ("Seat Ratio: 1 Representative per " + str(ratio) + " Voters")
