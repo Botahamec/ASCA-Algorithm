@@ -49,19 +49,12 @@ while (True):
 
 		valid = True
 
-		netest = nevotes / interval
-		setest = sevotes / interval
-		mwtest = mwvotes / interval
-		swtest = swvotes / interval
-		westtest = westvotes / interval
-		ostest = osvotes / interval
-
-		netest = round(int(netest))
-		setest = round(int(setest))
-		mwtest = round(int(mwtest))
-		swtest = round(int(swtest))
-		westtest = round(int(westtest))
-		ostest = round(int(ostest))
+		netest = int(round(nevotes / interval))
+		setest = int(round(sevotes / interval))
+		mwtest = int(round(mwvotes / interval))
+		swtest = int(round(swvotes / interval))
+		westtest = int(round(westvotes / interval))
+		ostest = int(round(osvotes / interval))
 
 		if (ostest == 0) : valid = False
 		if (westtest == 0) : valid = False
@@ -76,6 +69,8 @@ while (True):
 		if (mwtest > mwcands) : valid = False
 		if (setest > secands) : valid = False
 		if (netest > necands) : valid = False
+
+		if (interval in invalid) : valid = False
 		
 		if (valid):
 			
