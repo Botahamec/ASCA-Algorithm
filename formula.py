@@ -20,5 +20,5 @@ westerr = abs(.5 - (westvotes % interval / interval))
 oserr = abs(.5 - (osvotes % interval / interval))
 err = neerr + seerr + mwerr + swerr + westerr + oserr
 
-print ("Accuracy: " + err*100/3 + "%")
+print ("Accuracy: " + str(err*100/3) + "%")
 wait = input("Press enter to exit")
